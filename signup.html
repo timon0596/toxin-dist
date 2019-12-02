@@ -5,7 +5,7 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="wrapper">
+  <div class="signup_wrapper">
     <header>
       <div class="header"><a href="landingPage.html">
           <div class="logo">
@@ -33,66 +33,107 @@
         </nav>
       </div>
     </header>
-    <main><img src="./img/landingPageBackground.svg">
-      <div class="search-block__wrapper">
-        <div class="search-block block">
-          <h1>Найдем номера под ваши пожелания</h1>
-          <div class="arrival-depart">
-            <h3>прибытие</h3>
-            <h3>выезд</h3>
-            <div class="input-wrapper">
-              <input class="arrival date-dropdown" type="text" placeholder="дд.мм.гггг"><i class="material-icons">expand_more</i>
+    <main><img src="./img/signupPageBackground.svg">
+      <div class="block registration-block">
+        <h1>Регистрация аккаунта</h1>
+        <div class="person">
+          <div class="name">
+            <div class="text_field">
+              <input class="text_field__name" placeholder="Имя">
             </div>
-            <div class="input-wrapper">
-              <input class="depart date-dropdown" type="text" placeholder="дд.мм.гггг"><i class="material-icons">expand_more</i>
-            </div>
-            <div class="calendar-wrapper"></div>
           </div>
-          <div class="dropdown-wrapper">
-            <h3>гости</h3>
-            <div class="dropdown-guests">
-              <h3></h3>
-              <div class="guests">
-                <div class="how-much">Cколько гостей</div><i class="material-icons">expand_more		</i>
+          <div class="surname">
+            <div class="text_field">
+              <input class="text_field__surname" placeholder="Фамилия">
+            </div>
+          </div>
+          <div class="gender">
+            <div class="radio">
+              <div class="male">
+                <input type="radio" id="male" name="radiobuttons">
+                <div class="radiobutton"></div>
+                <label for="male">Мужчина</label>
               </div>
-              <div class="controls">
-                <div class="row first">
-                  <div class="name adult">взрослые</div>
-                  <div class="control">
-                    <div class="val minus inactive">-</div>
-                    <div class="val number">0</div>
-                    <div class="val plus">+</div>
-                  </div>
-                </div>
-                <div class="row second">
-                  <div class="name kid">дети</div>
-                  <div class="control">
-                    <div class="val minus inactive">-</div>
-                    <div class="val number">0</div>
-                    <div class="val plus">+</div>
-                  </div>
-                </div>
-                <div class="row third">
-                  <div class="name baby">младенцы</div>
-                  <div class="control">
-                    <div class="val minus inactive">-</div>
-                    <div class="val number">0</div>
-                    <div class="val plus">+</div>
-                  </div>
-                </div>
-                <div class="submit">
-                  <div class="clean">очистить</div>
-                  <div class="apply">применить</div>
-                </div>
+              <div class="female">
+                <input type="radio" id="female" name="radiobuttons">
+                <div class="radiobutton"></div>
+                <label for="female">Женщина</label>
               </div>
             </div>
           </div>
-          <div class="button-wrapper"><a href="search_room.html">
-              <div class="button arrowbutton">
-                <div class="text">подобрать номер</div><i class="material-icons">arrow_forward</i>
-              </div></a></div>
         </div>
-        <div class="tagline">Лучшие номера для вашей работы, отдыха и просто вдохновения</div>
+        <div class="birthday">
+          <h3>дата рождения</h3>
+          <div class="masked_textfield">
+            <div class="text_field">
+              <input type="text" spellcheck="false" placeholder="дд.мм.гггг">
+            </div>
+          </div>
+        </div>
+        <div class="sign-up">
+          <h3>данные для входа в сервис</h3>
+          <div class="sign-up__email">
+            <div class="text_field">
+              <input class="text_field__email" placeholder="Email">
+            </div>
+          </div>
+          <div class="sign-up__password">
+            <div class="text_field">
+              <input class="text_field__password" placeholder="Пароль">
+            </div>
+          </div>
+          <div class="sign-up__special-offers">
+            <div class="toggle_wrapper">
+              <input type="checkbox" id="offer" checked>
+              <label for="offer">Получать спецпредложения
+                <div class="toggleButton"></div>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="payment">
+          <div class="button arrowbutton">
+            <div class="text">перейти к оплате</div><i class="material-icons">arrow_forward</i>
+          </div>
+        </div>
+        <div class="sign-in">Уже есть аккаунт на Toxin
+          <div class="sign-in__button signin">
+            <div class="borderbutton-wrapper">
+              <div class="button borderbutton">
+                <div class="text">войти</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block sign-in--block">
+        <h1>Войти</h1>
+        <div class="sign-in">
+          <div class="sign-up__email">
+            <div class="text_field">
+              <input class="text_field__email" placeholder="Email">
+            </div>
+          </div>
+          <div class="sign-up__password">
+            <div class="text_field">
+              <input class="text_field__password" placeholder="Пароль">
+            </div>
+          </div>
+        </div>
+        <div class="enter-button">
+          <div class="button arrowbutton">
+            <div class="text">войти</div><i class="material-icons">arrow_forward</i>
+          </div>
+        </div>
+        <div class="create-account">Нет аккаунта на Toxin?
+          <div class="signup">
+            <div class="borderbutton-wrapper">
+              <div class="button borderbutton">
+                <div class="text">создать</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <footer>
