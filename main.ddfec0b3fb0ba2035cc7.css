@@ -1117,7 +1117,8 @@ header {
     display: -ms-flex;
     display: -o-flex;
     display: flex; }
-    header nav .nav__item_active {
+    header nav .nav__item_active,
+    header nav .nav__item:active {
       font-weight: bold;
       color: rgba(31, 32, 65, 0.75); }
     header nav .nav__item {
