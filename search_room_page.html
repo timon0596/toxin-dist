@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8">
+  <title>landing page</title>
+<link href="vendors.e0802d1411f57a9ed54e.css" rel="stylesheet"><link href="main.e0802d1411f57a9ed54e.css" rel="stylesheet"></head>
+<body>
+  <header>
+    <div class="sub--section"><img class="logo" src="img/Logo.svg">
+      <nav>
+        <div class="nav">
+          <div class="nav__item nav__item_active">О нас</div>
+          <div class="nav__item">Услуги<i class="material-icons">expand_more</i></div>
+          <div class="nav__item">Вакансии</div>
+          <div class="nav__item">Новости</div>
+          <div class="nav__item">Соглашения<i class="material-icons">expand_more</i></div>
+          <div class="nav__item nav__btn--item sign--in">
+            <div class="toxin--btn toxin--btn_bd">
+              <h3>войти</h3>
+            </div>
+          </div>
+          <div class="nav__item nav__btn--item sign--up">
+            <div class="toxin--btn toxin--btn_wide">
+              <h3>зарегистрироваться</h3>
+            </div>
+          </div>
+          <div class="nav__item user__name" style="display: none">Юлий Цезарь</div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="search--room--page">
+    <div class="search--room--page__filters">
+      <div class="search--room--page__filter">
+        <div class="search--room--page__filter__inner">
+          <div class="date--dropdown__wrapper filter_date_dropdown">
+            <div class="date--dropdown__datepicker"></div>
+            <div class="date--dropdown">
+              <h3>даты пребывания в отеле</h3>
+              <div class="form--element__wrapper">
+                <input class="form--element js-date masked--textfield" placeholder="дд.мм.гггг"><i class="material-icons">expand_more</i>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown__wrapper">
+            <h3>гости</h3>
+            <div class="form--element__wrapper dropdown guest--dropdown">
+              <div class="form--element"></div><i class="material-icons">expand_more</i>
+              <div class="dropdown--menu form--element" style="display: none">
+                <div class="dropdown--menu__row">
+                  <h3>взрослые</h3>
+                  <div class="counter">
+                    <div class="counter--button minus">-</div>
+                    <h3 class="counter--button value">0</h3>
+                    <div class="counter--button plus">+</div>
+                  </div>
+                </div>
+                <div class="dropdown--menu__row">
+                  <h3>дети</h3>
+                  <div class="counter">
+                    <div class="counter--button minus">-</div>
+                    <h3 class="counter--button value">0</h3>
+                    <div class="counter--button plus">+</div>
+                  </div>
+                </div>
+                <div class="dropdown--menu__row">
+                  <h3>младенцы</h3>
+                  <div class="counter">
+                    <div class="counter--button minus">-</div>
+                    <h3 class="counter--button value">0</h3>
+                    <div class="counter--button plus">+</div>
+                  </div>
+                </div>
+                <div class="dropdown--menu__row">
+                  <div class="clear">
+                    <div class="toxin--text--btn toxin--text--btn_grey">
+                      <h3>очистить</h3>
+                    </div>
+                  </div>
+                  <div class="apply">
+                    <div class="toxin--text--btn">
+                      <h3>применить</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="search--room--page__filter">
+        <div class="range--slider__wrapper">
+          <div class="range--slider__header">
+            <h3>диапазон цены</h3>
+            <div class="range--slider__amount"></div>
+          </div>
+          <div class="range--slider"></div>
+        </div>
+        <p>Стоимость за сутки пребывания в номере</p>
+      </div>
+      <div class="search--room--page__filter">
+        <div class="ckbbtns__wrapper">
+          <h3>Checkbox Buttons</h3>
+          <div class="ckbbtns">
+            <div class="ckbbtn">
+              <div class="ckb"></div>
+              <div class="ckbbtn__name">Можно курить</div>
+            </div>
+            <div class="ckbbtn">
+              <div class="ckb"></div>
+              <div class="ckbbtn__name">Можно с питомцами</div>
+            </div>
+            <div class="ckbbtn">
+              <div class="ckb"></div>
+              <div class="ckbbtn__name">Можно пригласить<br>гостей (до 10 человек)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="search--room--page__filter">
+        <div class="ckbbtns__wrapper">
+          <h3>доступность</h3>
+          <div class="rich_ckbbtns">
+            <div class="ckbbtn">
+              <div class="ckb"></div>
+              <div class="ckbbtn__name">Широкий коридор</div>
+              <div class="ckbbtn__description">Ширина коридоров в номере не менее 91 см.</div>
+            </div>
+            <div class="ckbbtn">
+              <div class="ckb"></div>
+              <div class="ckbbtn__name">Помощник для инвалидов</div>
+              <div class="ckbbtn__description">На 1 этаже вас встретит специалист и проводит до номера.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="search--room--page__filter">
+        <div class="dropdown__wrapper">
+          <h3>удобства номера</h3>
+          <div class="form--element__wrapper dropdown">
+            <div class="form--element"></div><i class="material-icons">expand_more</i>
+            <div class="dropdown--menu form--element" style="display: none">
+              <div class="dropdown--menu__row">
+                <h3>спальни</h3>
+                <div class="counter">
+                  <div class="counter--button minus">-</div>
+                  <h3 class="counter--button value">2</h3>
+                  <div class="counter--button plus">+</div>
+                </div>
+              </div>
+              <div class="dropdown--menu__row">
+                <h3>кровати</h3>
+                <div class="counter">
+                  <div class="counter--button minus">-</div>
+                  <h3 class="counter--button value">2</h3>
+                  <div class="counter--button plus">+</div>
+                </div>
+              </div>
+              <div class="dropdown--menu__row">
+                <h3>ванные комнаты</h3>
+                <div class="counter">
+                  <div class="counter--button minus">-</div>
+                  <h3 class="counter--button value">0</h3>
+                  <div class="counter--button plus">+</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="search--room--page__filter">
+        <div class="ckblist">
+          <div class="ckblist__header">
+            <h3 class="ckblist__name">дополнительные удобства</h3><i class="material-icons">expand_more</i>
+          </div>
+          <ul class="ckblist__wrapper" style="display: none">
+            <li>
+              <div class="ckb"> </div>Завтрак
+            </li>
+            <li>
+              <div class="ckb"></div>Письменный стол
+            </li>
+            <li>
+              <div class="ckb"></div>Стул для кормления
+            </li>
+            <li>
+              <div class="ckb"></div>Кроватка
+            </li>
+            <li>
+              <div class="ckb"></div>Телевизор
+            </li>
+            <li>
+              <div class="ckb"></div>Шампунь
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="search--room--page__results">
+      <h1>Номера которые мы для вас подобрали</h1>
+      <div class="room--preview--grid">
+        <div class="block__room--preview">
+          <div class="block__row">
+            <div class="carousel slide" data-ride="true" id="carouselExampleIndicators0">
+              <ol class="carousel-indicators">
+                <li class="active" data-target="#carouselExampleIndicators0" data-slide-to="0"></li>
+                <li data-target="#carouselExampleIndicators0" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators0" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators0" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img class="d-block w-100" src="img/preview/image0.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image0.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image0.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image0.png" alt="First slide"></div>
+              </div><a class="carousel-control-prev" href="#carouselExampleIndicators0" role="button" data-slide="prev"><i class="material-icons" aria-hidden="true">expand_more</i></a><a class="carousel-control-next" href="#carouselExampleIndicators0" role="button" data-slide="next"><i class="material-icons" aria-hidden="true">expand_more</i></a>
+            </div>
+          </div>
+          <div class="block__row">
+            <div class="block__row_inner">
+              <div class="block__room--details__number">№ 
+                <h1>888</h1>
+                <h3>люкс</h3>
+              </div>
+              <div class="block__room--details__payment">
+                <div class="block__room--details__cost">9 990₽</div> в сутки
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="block__row_inner">
+              <div class="rate"><i class="material-icons">star</i>
+                <div class="rate__num">5</div>
+                <div class="rate__num">5</div><i class="material-icons">star</i>
+                <div class="rate__num">4</div>
+                <div class="rate__num">4</div><i class="material-icons">star</i>
+                <div class="rate__num">3</div>
+                <div class="rate__num">3</div><i class="material-icons">star</i>
+                <div class="rate__num">2</div>
+                <div class="rate__num">2</div><i class="material-icons">star</i>
+                <div class="rate__num">1</div>
+                <div class="rate__num">1</div>
+              </div>
+              <div class="block__room--details__payment">
+                <div class="block__room--details__cost">145</div> отзывов
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block__room--preview">
+          <div class="block__row">
+            <div class="carousel slide" data-ride="true" id="carouselExampleIndicators1">
+              <ol class="carousel-indicators">
+                <li class="active" data-target="#carouselExampleIndicators1" data-slide-to="0"></li>
+                <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators1" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img class="d-block w-100" src="img/preview/image1.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image1.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image1.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image1.png" alt="First slide"></div>
+              </div><a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev"><i class="material-icons" aria-hidden="true">expand_more</i></a><a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next"><i class="material-icons" aria-hidden="true">expand_more</i></a>
+            </div>
+          </div>
+          <div class="block__row">
+            <div class="block__row_inner">
+              <div class="block__room--details__number">№ 
+                <h1>840</h1>
+              </div>
+              <div class="block__room--details__payment">
+                <div class="block__room--details__cost">9 900₽</div> в сутки
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="block__row_inner">
+              <div class="rate"><i class="material-icons">star</i>
+                <div class="rate__num">4</div>
+                <div class="rate__num">5</div><i class="material-icons">star</i>
+                <div class="rate__num">3</div>
+                <div class="rate__num">4</div><i class="material-icons">star</i>
+                <div class="rate__num">2</div>
+                <div class="rate__num">3</div><i class="material-icons">star</i>
+                <div class="rate__num">1</div>
+                <div class="rate__num">2</div><i class="material-icons">star_border</i>
+                <div class="rate__num">1</div>
+              </div>
+              <div class="block__room--details__payment">
+                <div class="block__room--details__cost">65</div> отзывов
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block__room--preview">
+          <div class="block__row">
+            <div class="carousel slide" data-ride="true" id="carouselExampleIndicators2">
+              <ol class="carousel-indicators">
+                <li class="active" data-target="#carouselExampleIndicators2" data-slide-to="0"></li>
+                <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img class="d-block w-100" src="img/preview/image2.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image2.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image2.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image2.png" alt="First slide"></div>
+              </div><a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev"><i class="material-icons" aria-hidden="true">expand_more</i></a><a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next"><i class="material-icons" aria-hidden="true">expand_more</i></a>
+            </div>
+          </div>
+          <div class="block__row">
+            <div class="block__row_inner">
+              <div class="block__room--details__number">№ 
+                <h1>980</h1>
+                <h3>люкс</h3>
+              </div>
+              <div class="block__room--details__payment">
+                <div class="block__room--details__cost">8 500₽</div> в сутки
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="block__row_inner">
+              <div class="rate"><i class="material-icons">star</i>
+                <div class="rate__num">3</div>
+                <div class="rate__num">5</div><i class="material-icons">star</i>
+                <div class="rate__num">2</div>
+                <div class="rate__num">4</div><i class="material-icons">star</i>
+                <div class="rate__num">1</div>
+                <div class="rate__num">3</div><i class="material-icons">star_border</i>
+                <div class="rate__num">2</div><i class="material-icons">star_border</i>
+                <div class="rate__num">1</div>
+              </div>
+              <div class="block__room--details__payment">
+                <div class="block__room--details__cost">35</div> отзывов
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block__room--preview">
+          <div class="block__row">
+            <div class="carousel slide" data-ride="true" id="carouselExampleIndicators3">
+              <ol class="carousel-indicators">
+                <li class="active" data-target="#carouselExampleIndicators3" data-slide-to="0"></li>
+                <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators3" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img class="d-block w-100" src="img/preview/image3.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image3.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image3.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image3.png" alt="First slide"></div>
+              </div><a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev"><i class="material-icons" aria-hidden="true">expand_more</i></a><a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next"><i class="material-icons" aria-hidden="true">expand_more</i></a>
+            </div>
+          </div>
+          <div class="block__row">
+            <div class="block__row_inner">
+              <div class="block__room--details__number">№ 
+                <h1>856</h1>
+              </div>
+              <div class="block__room--details__payment">
+                <div class="block__room--details__cost">7 300₽</div> в сутки
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="block__row_inner">
+              <div class="rate"><i class="material-icons">star</i>
+                <div class="rate__num">5</div>
+                <div class="rate__num">5</div><i class="material-icons">star</i>
+                <div class="rate__num">4</div>
+                <div class="rate__num">4</div><i class="material-icons">star</i>
+                <div class="rate__num">3</div>
+                <div class="rate__num">3</div><i class="material-icons">star</i>
+                <div class="rate__num">2</div>
+                <div class="rate__num">2</div><i class="material-icons">star</i>
+                <div class="rate__num">1</div>
+                <div class="rate__num">1</div>
+              </div>
+              <div class="block__room--details__payment">
+                <div class="block__room--details__cost">19</div> отзывов
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block__room--preview">
+          <div class="block__row">
+            <div class="carousel slide" data-ride="true" id="carouselExampleIndicators4">
+              <ol class="carousel-indicators">
+                <li class="active" data-target="#carouselExampleIndicators4" data-slide-to="0"></li>
+                <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators4" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators4" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img class="d-block w-100" src="img/preview/image4.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image4.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image4.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image4.png" alt="First slide"></div>
+              </div><a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev"><i class="material-icons" aria-hidden="true">expand_more</i></a><a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next"><i class="material-icons" aria-hidden="true">expand_more</i></a>
+            </div>
+          </div>
+          <div class="block__row">
+            <div class="block__row_inner">
+              <div class="block__room--details__number">№ 
+                <h1>740</h1>
+              </div>
+              <div class="block__room--details__payment">
+                <div class="block__room--details__cost">6 000₽</div> в сутки
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="block__row_inner">
+              <div class="rate"><i class="material-icons">star</i>
+                <div class="rate__num">4</div>
+                <div class="rate__num">5</div><i class="material-icons">star</i>
+                <div class="rate__num">3</div>
+                <div class="rate__num">4</div><i class="material-icons">star</i>
+                <div class="rate__num">2</div>
+                <div class="rate__num">3</div><i class="material-icons">star</i>
+                <div class="rate__num">1</div>
+                <div class="rate__num">2</div><i class="material-icons">star_border</i>
+                <div class="rate__num">1</div>
+              </div>
+              <div class="block__room--details__payment">
+                <div class="block__room--details__cost">44</div> отзывов
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block__room--preview">
+          <div class="block__row">
+            <div class="carousel slide" data-ride="true" id="carouselExampleIndicators5">
+              <ol class="carousel-indicators">
+                <li class="active" data-target="#carouselExampleIndicators5" data-slide-to="0"></li>
+                <li data-target="#carouselExampleIndicators5" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators5" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators5" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img class="d-block w-100" src="img/preview/image5.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image5.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image5.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image5.png" alt="First slide"></div>
+              </div><a class="carousel-control-prev" href="#carouselExampleIndicators5" role="button" data-slide="prev"><i class="material-icons" aria-hidden="true">expand_more</i></a><a class="carousel-control-next" href="#carouselExampleIndicators5" role="button" data-slide="next"><i class="material-icons" aria-hidden="true">expand_more</i></a>
+            </div>
+          </div>
+          <div class="block__row">
+            <div class="block__row_inner">
+              <div class="block__room--details__number">№ 
+                <h1>982</h1>
+              </div>
+              <div class="block__room--details__payment">
+                <div class="block__room--details__cost">5 800₽</div> в сутки
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="block__row_inner">
+              <div class="rate"><i class="material-icons">star</i>
+                <div class="rate__num">3</div>
+                <div class="rate__num">5</div><i class="material-icons">star</i>
+                <div class="rate__num">2</div>
+                <div class="rate__num">4</div><i class="material-icons">star</i>
+                <div class="rate__num">1</div>
+                <div class="rate__num">3</div><i class="material-icons">star_border</i>
+                <div class="rate__num">2</div><i class="material-icons">star_border</i>
+                <div class="rate__num">1</div>
+              </div>
+              <div class="block__room--details__payment">
+                <div class="block__room--details__cost">56</div> отзывов
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block__room--preview">
+          <div class="block__row">
+            <div class="carousel slide" data-ride="true" id="carouselExampleIndicators6">
+              <ol class="carousel-indicators">
+                <li class="active" data-target="#carouselExampleIndicators6" data-slide-to="0"></li>
+                <li data-target="#carouselExampleIndicators6" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators6" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators6" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img class="d-block w-100" src="img/preview/image6.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image6.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image6.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image6.png" alt="First slide"></div>
+              </div><a class="carousel-control-prev" href="#carouselExampleIndicators6" role="button" data-slide="prev"><i class="material-icons" aria-hidden="true">expand_more</i></a><a class="carousel-control-next" href="#carouselExampleIndicators6" role="button" data-slide="next"><i class="material-icons" aria-hidden="true">expand_more</i></a>
+            </div>
+          </div>
+          <div class="block__row">
+            <div class="block__row_inner">
+              <div class="block__room--details__number">№ 
+                <h1>678</h1>
+              </div>
+              <div class="block__room--details__payment">
+                <div class="block__room--details__cost">5 500₽</div> в сутки
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="block__row_inner">
+              <div class="rate"><i class="material-icons">star</i>
+                <div class="rate__num">5</div>
+                <div class="rate__num">5</div><i class="material-icons">star</i>
+                <div class="rate__num">4</div>
+                <div class="rate__num">4</div><i class="material-icons">star</i>
+                <div class="rate__num">3</div>
+                <div class="rate__num">3</div><i class="material-icons">star</i>
+                <div class="rate__num">2</div>
+                <div class="rate__num">2</div><i class="material-icons">star</i>
+                <div class="rate__num">1</div>
+                <div class="rate__num">1</div>
+              </div>
+              <div class="block__room--details__payment">
+                <div class="block__room--details__cost">45</div> отзывов
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block__room--preview">
+          <div class="block__row">
+            <div class="carousel slide" data-ride="true" id="carouselExampleIndicators7">
+              <ol class="carousel-indicators">
+                <li class="active" data-target="#carouselExampleIndicators7" data-slide-to="0"></li>
+                <li data-target="#carouselExampleIndicators7" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators7" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators7" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img class="d-block w-100" src="img/preview/image7.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image7.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image7.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image7.png" alt="First slide"></div>
+              </div><a class="carousel-control-prev" href="#carouselExampleIndicators7" role="button" data-slide="prev"><i class="material-icons" aria-hidden="true">expand_more</i></a><a class="carousel-control-next" href="#carouselExampleIndicators7" role="button" data-slide="next"><i class="material-icons" aria-hidden="true">expand_more</i></a>
+            </div>
+          </div>
+          <div class="block__row">
+            <div class="block__row_inner">
+              <div class="block__room--details__number">№ 
+                <h1>450</h1>
+              </div>
+              <div class="block__room--details__payment">
+                <div class="block__room--details__cost">5 300₽</div> в сутки
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="block__row_inner">
+              <div class="rate"><i class="material-icons">star</i>
+                <div class="rate__num">4</div>
+                <div class="rate__num">5</div><i class="material-icons">star</i>
+                <div class="rate__num">3</div>
+                <div class="rate__num">4</div><i class="material-icons">star</i>
+                <div class="rate__num">2</div>
+                <div class="rate__num">3</div><i class="material-icons">star</i>
+                <div class="rate__num">1</div>
+                <div class="rate__num">2</div><i class="material-icons">star_border</i>
+                <div class="rate__num">1</div>
+              </div>
+              <div class="block__room--details__payment">
+                <div class="block__room--details__cost">39</div> отзывов
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block__room--preview">
+          <div class="block__row">
+            <div class="carousel slide" data-ride="true" id="carouselExampleIndicators8">
+              <ol class="carousel-indicators">
+                <li class="active" data-target="#carouselExampleIndicators8" data-slide-to="0"></li>
+                <li data-target="#carouselExampleIndicators8" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators8" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators8" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img class="d-block w-100" src="img/preview/image8.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image8.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image8.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image8.png" alt="First slide"></div>
+              </div><a class="carousel-control-prev" href="#carouselExampleIndicators8" role="button" data-slide="prev"><i class="material-icons" aria-hidden="true">expand_more</i></a><a class="carousel-control-next" href="#carouselExampleIndicators8" role="button" data-slide="next"><i class="material-icons" aria-hidden="true">expand_more</i></a>
+            </div>
+          </div>
+          <div class="block__row">
+            <div class="block__row_inner">
+              <div class="block__room--details__number">№ 
+                <h1>350</h1>
+              </div>
+              <div class="block__room--details__payment">
+                <div class="block__room--details__cost">5 000₽</div> в сутки
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="block__row_inner">
+              <div class="rate"><i class="material-icons">star</i>
+                <div class="rate__num">3</div>
+                <div class="rate__num">5</div><i class="material-icons">star</i>
+                <div class="rate__num">2</div>
+                <div class="rate__num">4</div><i class="material-icons">star</i>
+                <div class="rate__num">1</div>
+                <div class="rate__num">3</div><i class="material-icons">star_border</i>
+                <div class="rate__num">2</div><i class="material-icons">star_border</i>
+                <div class="rate__num">1</div>
+              </div>
+              <div class="block__room--details__payment">
+                <div class="block__room--details__cost">77</div> отзывов
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block__room--preview">
+          <div class="block__row">
+            <div class="carousel slide" data-ride="true" id="carouselExampleIndicators9">
+              <ol class="carousel-indicators">
+                <li class="active" data-target="#carouselExampleIndicators9" data-slide-to="0"></li>
+                <li data-target="#carouselExampleIndicators9" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators9" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators9" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img class="d-block w-100" src="img/preview/image9.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image9.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image9.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image9.png" alt="First slide"></div>
+              </div><a class="carousel-control-prev" href="#carouselExampleIndicators9" role="button" data-slide="prev"><i class="material-icons" aria-hidden="true">expand_more</i></a><a class="carousel-control-next" href="#carouselExampleIndicators9" role="button" data-slide="next"><i class="material-icons" aria-hidden="true">expand_more</i></a>
+            </div>
+          </div>
+          <div class="block__row">
+            <div class="block__row_inner">
+              <div class="block__room--details__number">№ 
+                <h1>666</h1>
+              </div>
+              <div class="block__room--details__payment">
+                <div class="block__room--details__cost">5 000₽</div> в сутки
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="block__row_inner">
+              <div class="rate"><i class="material-icons">star</i>
+                <div class="rate__num">5</div>
+                <div class="rate__num">5</div><i class="material-icons">star</i>
+                <div class="rate__num">4</div>
+                <div class="rate__num">4</div><i class="material-icons">star</i>
+                <div class="rate__num">3</div>
+                <div class="rate__num">3</div><i class="material-icons">star</i>
+                <div class="rate__num">2</div>
+                <div class="rate__num">2</div><i class="material-icons">star</i>
+                <div class="rate__num">1</div>
+                <div class="rate__num">1</div>
+              </div>
+              <div class="block__room--details__payment">
+                <div class="block__room--details__cost">25</div> отзывов
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block__room--preview">
+          <div class="block__row">
+            <div class="carousel slide" data-ride="true" id="carouselExampleIndicators10">
+              <ol class="carousel-indicators">
+                <li class="active" data-target="#carouselExampleIndicators10" data-slide-to="0"></li>
+                <li data-target="#carouselExampleIndicators10" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators10" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators10" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img class="d-block w-100" src="img/preview/image10.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image10.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image10.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image10.png" alt="First slide"></div>
+              </div><a class="carousel-control-prev" href="#carouselExampleIndicators10" role="button" data-slide="prev"><i class="material-icons" aria-hidden="true">expand_more</i></a><a class="carousel-control-next" href="#carouselExampleIndicators10" role="button" data-slide="next"><i class="material-icons" aria-hidden="true">expand_more</i></a>
+            </div>
+          </div>
+          <div class="block__row">
+            <div class="block__row_inner">
+              <div class="block__room--details__number">№ 
+                <h1>444</h1>
+              </div>
+              <div class="block__room--details__payment">
+                <div class="block__room--details__cost">5 000₽</div> в сутки
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="block__row_inner">
+              <div class="rate"><i class="material-icons">star</i>
+                <div class="rate__num">3</div>
+                <div class="rate__num">5</div><i class="material-icons">star</i>
+                <div class="rate__num">2</div>
+                <div class="rate__num">4</div><i class="material-icons">star</i>
+                <div class="rate__num">1</div>
+                <div class="rate__num">3</div><i class="material-icons">star_border</i>
+                <div class="rate__num">2</div><i class="material-icons">star_border</i>
+                <div class="rate__num">1</div>
+              </div>
+              <div class="block__room--details__payment">
+                <div class="block__room--details__cost">15</div> отзывов
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block__room--preview">
+          <div class="block__row">
+            <div class="carousel slide" data-ride="true" id="carouselExampleIndicators11">
+              <ol class="carousel-indicators">
+                <li class="active" data-target="#carouselExampleIndicators11" data-slide-to="0"></li>
+                <li data-target="#carouselExampleIndicators11" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators11" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators11" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img class="d-block w-100" src="img/preview/image11.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image11.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image11.png" alt="First slide"></div>
+                <div class="carousel-item"><img class="d-block w-100" src="img/preview/image11.png" alt="First slide"></div>
+              </div><a class="carousel-control-prev" href="#carouselExampleIndicators11" role="button" data-slide="prev"><i class="material-icons" aria-hidden="true">expand_more</i></a><a class="carousel-control-next" href="#carouselExampleIndicators11" role="button" data-slide="next"><i class="material-icons" aria-hidden="true">expand_more</i></a>
+            </div>
+          </div>
+          <div class="block__row">
+            <div class="block__row_inner">
+              <div class="block__room--details__number">№ 
+                <h1>352</h1>
+              </div>
+              <div class="block__room--details__payment">
+                <div class="block__room--details__cost">5 000₽</div> в сутки
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="block__row_inner">
+              <div class="rate"><i class="material-icons">star</i>
+                <div class="rate__num">3</div>
+                <div class="rate__num">5</div><i class="material-icons">star</i>
+                <div class="rate__num">2</div>
+                <div class="rate__num">4</div><i class="material-icons">star</i>
+                <div class="rate__num">1</div>
+                <div class="rate__num">3</div><i class="material-icons">star_border</i>
+                <div class="rate__num">2</div><i class="material-icons">star_border</i>
+                <div class="rate__num">1</div>
+              </div>
+              <div class="block__room--details__payment">
+                <div class="block__room--details__cost">55</div> отзывов
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pagination">
+        <div class="pages">
+          <div class="page page_current">1</div>
+          <div class="page">2</div>
+          <div class="page">3</div>
+          <div class="page">...</div>
+          <div class="page">15</div><i class="material-icons">arrow_forward</i>
+        </div>
+        <div class="pagination__info">1 – 12 из 100+ вариантов аренды</div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer">
+      <div class="footer__column"><img class="logo" src="img/Logo.svg">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</div>
+      <div class="footer__column">
+        <h3>навигация</h3>
+        <p>О нас</p>
+        <p>Новости</p>
+        <p>Служба поддержки</p>
+        <p>Услуги</p>
+      </div>
+      <div class="footer__column">
+        <h3>о нас</h3>
+        <p>О сервисе</p>
+        <p>Наша команда</p>
+        <p>Вакансии</p>
+        <p>Инвесторы</p>
+      </div>
+      <div class="footer__column">
+        <h3>служба поддержки</h3>
+        <p>Соглашения</p>
+        <p>Сообщества</p>
+        <p>Связь с нами</p>
+      </div>
+      <div class="footer__column">
+        <h3>подписка</h3>Получайте специальные предложения и новости сервиса
+        <div class="form--element__wrapper subscription">
+          <input class="form--element" placeholder="Email"><i class="material-icons">arrow_forward</i>
+        </div>
+      </div>
+    </div>
+    <div class="sub--section copyright"><img class="logo" src="img/Logo.svg">Copyright © 2018 Toxin отель. Все права зачищены.
+      <div class="socials"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+    </div>
+  </footer>
+<script type="text/javascript" src="vendors.main.js"></script><script type="text/javascript" src="main.js"></script></body>
